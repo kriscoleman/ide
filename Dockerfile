@@ -32,7 +32,19 @@ RUN git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim && \
     git clone --depth=1 https://github.com/vim-airline/vim-airline && \
     git clone --depth=1 https://github.com/vim-airline/vim-airline-themes && \
     git clone --depth=1 https://github.com/vim-syntastic/syntastic && \
-    git clone --depth=1 https://github.com/derekwyatt/vim-scala
+    git clone --depth=1 https://github.com/derekwyatt/vim-scala && \
+    git clone --depth=1 https://github.com/burnettk/vim-angular && \
+    git clone --depth=1 https://github.com/pangloss/vim-javascript && \
+    git clone --depth=1 https://github.com/othree/javascript-libraries-syntax.vim && \
+    git clone --depth=1 https://github.com/claco/jasmine.vim && \
+    git clone --depth=1 https://github.com/OmniSharp/omnisharp-vim && \
+    git clone --depth=1 https://github.com/Shougo/denite.nvim && \
+    git clone --depth=1 https://github.com/neoclide/coc.nvim && \
+    git clone --depth=1 https://github.com/neoclide/coc-tsserver && \
+    git clone --depth=1 https://github.com/neoclide/coc-eslint && \
+    git clone --depth=1 https://github.com/neoclide/coc-tslint-plugin && \
+    git clone --depth=1 https://github.com/neoclide/coc-prettier && \
+    git clone --depth=1 https://github.com/neoclide/coc-css
 
 # In the entrypoint, we'll create a user called `me`
 WORKDIR ${HOME}

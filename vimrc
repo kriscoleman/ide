@@ -46,7 +46,18 @@ Plug 'plasticboy/vim-markdown'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
-Plug 'derekwyatt/vim-scala'
+Plug 'burnettk/vim-angular'
+Plug 'pangloss/vim-javascript'
+Plug 'othree/javascript-libraries-synax.vim'
+Plug 'claco/jasmine.vim'
+Plug 'OmniSharp/omnisharp/vim'
+Plug 'Shougo/denite.vim'
+Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc-tsserver'
+Plug 'neoclide/coc-eslint'
+Plug 'neoclide/coc-tslint-plugin'
+Plug 'neoclide/coc-prettier'
+Plug 'neoclide/coc-css'
 call plug#end()
 
 " CtrlP
@@ -59,7 +70,7 @@ let g:ctrlp_show_hidden = 1
 
 " vim-airline
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='molokai'
+let g:airline_theme='deus'
 "set laststatus=2
 
 " Buffers
@@ -74,6 +85,9 @@ nnoremap gb :ls<CR>:b
 
 " Disable Vim Folding
 set nofoldenable
+
+" Set relative line numbers
+set relativenumber
 
 " add yaml stuffs
 au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
