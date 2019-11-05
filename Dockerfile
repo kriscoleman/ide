@@ -19,6 +19,9 @@ COPY --from=ls12styler/tmux:latest /usr/local/bin/tmux /usr/local/bin/tmux
 # Install jQ!
 RUN wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 -O /bin/jq && chmod +x /bin/jq
 
+# Install node and npm!
+RUN apk add --update nodejs npm
+
 # Configure text editor - vim!
 RUN curl -fLo ${HOME}/.config/nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 # Consult the vimrc file to see what's installed
