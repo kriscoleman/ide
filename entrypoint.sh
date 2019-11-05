@@ -11,8 +11,8 @@ fi
 export HOST_USER_ID=${HOST_USER_ID:-`stat -c %u /workspace`}
 export HOST_GROUP_ID=${HOST_GROUP_ID:-`stat -c %g /workspace`}
 
-groupadd -g $HOST_GROUP_ID group
-useradd -u $HOST_USER_ID -g group me
+groupadd -g -S $HOST_GROUP_ID group
+useradd -u -S $HOST_USER_ID -g group me
 
 # This is to ensure all the files that we copy into the container are owned
 # with the right permissions
